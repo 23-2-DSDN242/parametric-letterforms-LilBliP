@@ -13,21 +13,37 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 80,
-  "offsetx": 0,
-  "offsety": 35
+  "size": 200,
+  "size2": 25,
+  "size3": 200,
+  "offsetx": 50,
+  "y2-1": -85,
+  "y2-2": 20,
+  "y3-1": 0,
+  "y3-2": 0
+
 }
 
 const letterB = {
-  "size": 150,
-  "offsetx": 0,
-  "offsety": -145
+  "size": 200,
+  "size2": 50,
+  "size3": 25,
+  "offsetx": 50,
+  "y2-1": 50,
+  "y2-2": -50,
+  "y3-1": 50,
+  "y3-2": -50
 }
 
 const letterC = {
-  "size": 100,
-  "offsetx": 30,
-  "offsety": 0
+  "size": 200,
+  "size2": 50,
+  "size3": 50,
+  "offsetx": 50,
+  "y2-1": 75,
+  "y2-2": -75,
+  "y3-1": 75,
+  "y3-2": -75
 }
 
 const backgroundColor  = "#acf2e7";
@@ -50,6 +66,8 @@ function setup () {
 }
 
 function draw () {
+  angleMode(DEGREES)
+  rectMode(CENTER)
   // clear screen
   background(backgroundColor);
 
@@ -57,7 +75,7 @@ function draw () {
   let center_x = canvasWidth / 2;
   let center_y = canvasHeight / 1.6;
 
-  // draw the letters A, B, C from saved data
+  //draw the letters A, B, C from saved data
   drawLetter(center_x - 250, center_y, letterA);
   drawLetter(center_x      , center_y, letterB);
   drawLetter(center_x + 250, center_y, letterC);
@@ -65,15 +83,30 @@ function draw () {
 
 function drawLetter(posx, posy, letterData) {
   // determine parameters for second circle
-  let size2 = letterData["size"];
-  let pos2x = posx + letterData["offsetx"];
-  let pos2y = posy + letterData["offsety"];
+  let size1 = letterData["size"];
+  let size2 = letterData["size2"];
+  let size3 = letterData["size3"];
+  let line2offset = posx + letterData["offsetx"];
+  let line3offset = posx + (letterData["offsetx"]*2);
+  let y2_1 = posy + letterData["y2-1"];
+  let y2_2 = posy + letterData["y2-2"];
+  let y3_1 = posy + letterData["y3-1"];
+  let y3_2 = posy + letterData["y3-2"];
 
-  // draw two circles
+
+  // rects
   fill(darkGreen);
-  ellipse(posx, posy, 150, 150);
+  //L1
+  rect(posx, posy, 20, size1);
   fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
+  //L2
+  rect(line2offset,y2_1,20,size2)
+  rect(line2offset,y2_2,20,size2)
+  //L3
+  rect(line3offset,y3_1,20,size3)
+  rect(line3offset,y3_2,20,size3)
+
+  
 }
 
 function keyTyped() {
@@ -83,4 +116,6 @@ function keyTyped() {
   else if (key == '@') {
     saveBlocksImages(true);
   }
+
+
 }
