@@ -45,6 +45,16 @@ const letterC = {
   "y3-1": 75,
   "y3-2": -75
 }
+const letterD = {
+  "size": 200,
+  "size2": 50,
+  "size3": 100,
+  "offsetx": 50,
+  "y2-1": 75,
+  "y2-2": -75,
+  "y3-1": 0,
+  "y3-2": 0
+}
 
 const backgroundColor  = "#acf2e7";
 
@@ -76,9 +86,10 @@ function draw () {
   let center_y = canvasHeight / 1.6;
 
   //draw the letters A, B, C from saved data
-  drawLetter(center_x - 250, center_y, letterA);
-  drawLetter(center_x      , center_y, letterB);
-  drawLetter(center_x + 250, center_y, letterC);
+  drawLetter(center_x - 400, center_y, letterA);
+  drawLetter(center_x - 200, center_y, letterB);
+  drawLetter(center_x      , center_y, letterC);
+  drawLetter(center_x + 200, center_y, letterD);
 }
 
 function drawLetter(posx, posy, letterData) {
