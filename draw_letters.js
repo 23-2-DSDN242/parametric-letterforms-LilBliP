@@ -8,6 +8,23 @@ const darkGreen  = "#26b29d";
 const lightGreen  = "#30dfc4";
 const strokeColor  = "#0a2d27";
 
+//colours
+const darkBrown = "#362707" //deep cut bone
+const midBrown = "#63562D" // deep cut light
+const darkBeige = "#97844D" //edge dark
+const lightBeige = "#B8A36B" //edge light or yellowbone
+const bone1 = "#C0BB9F" //bone1
+const bone2 = "#B1B186" //bone2
+const bone3 = "#ADAA7B" //bone3
+
+function makeLine(x,y,l,rot){
+  push()
+  rectMode(CENTER)
+  translate(x,y)
+  rotate(rot)
+  rect(0,0,5,l,5)
+  pop()
+}
 /*
  * Draw the letter given the letterData
  *
@@ -26,10 +43,13 @@ function drawLetter(letterData) {
   let pos2y = 150 + letterData["offsety"];
 
   // draw two circles
+  rectMode(CENTER)
   fill(darkGreen);
   ellipse(50, 150, 75, 75);
   fill(lightGreen);
   ellipse(pos2x, pos2y, size2, size2);
+  rect(50,50,100,100)
+  makeLine(50,50,150,90)
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
