@@ -41,15 +41,32 @@ function drawLetter(letterData) {
   strokeWeight(4);
 
   // determine parameters for second circle
-  let size1 = letterData["lineSize"];
+  let size1 = letterData["lineSize1"];
   let pos1x = letterData["linex1"];
   let pos1y = letterData["liney1"];
   let rot1 = letterData["rot1"];
 
+  let size2 = letterData["lineSize2"];
+  let pos2x = letterData["linex2"];
+  let pos2y = letterData["liney2"];
+  let rot2 = letterData["rot2"];
+
+  let pos3x = letterData["linex3"];
+  let pos3y = letterData["liney3"];
+  let rot3 = letterData["rot3"];
+
+  let pos4x = letterData["linex4"];
+  let pos4y = letterData["liney4"];
+  let rot4 = letterData["rot4"];
+
   // draw two circles
   rectMode(CENTER)
-  rect(50,150,100,100)
+  //rect(50,150,100,100)
   makeLine(pos1x,pos1y,size1,rot1)
+  makeLine(pos2x,pos2y,size1,rot2)
+  makeLine(pos3x,pos3y,size2,rot3)
+  makeLine(pos4x,pos4y,size2,rot4)
+  //s25 x50 y125
 }
 
 function interpolate_letter(percent, oldObj, newObj) {

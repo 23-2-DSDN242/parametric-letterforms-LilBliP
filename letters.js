@@ -1,15 +1,35 @@
 const alphabet = {
   "default": {
     "lineSize1": 40,
+    "lineSize2": 40,
     "linex1": 0,
     "liney1": 0,
-    "rot1": 0
+    "linex2": 0,
+    "liney2": 0,
+    "linex3": 0,
+    "liney3": 0,
+    "linex4": 0,
+    "liney4": 0,
+    "rot1": 0,
+    "rot2": 0,
+    "rot3": 0,
+    "rot4": 0
   },
   "A": {
-    "lineSize": 100,
+    "lineSize1": 25,
+    "lineSize2": 25,
     "linex1": 50,
-    "liney1": 100,
-    "rot1": 0
+    "liney1": 125,
+    "linex2": 90,
+    "liney2": 155,
+    "linex3": 10,
+    "liney3": 155,
+    "linex4": 50,
+    "liney4": 125,
+    "rot1": 0,
+    "rot2": 45,
+    "rot3": -45,
+    "rot4": 0
   },
   "B": {
     "lineSize": 40,
