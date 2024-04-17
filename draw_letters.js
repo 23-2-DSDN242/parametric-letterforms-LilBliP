@@ -22,6 +22,9 @@ function makeLine(x,y,l,rot){
   rectMode(CENTER)
   translate(x,y)
   rotate(rot)
+  fill(darkBrown)
+  stroke(midBrown)
+  strokeWeight(2);
   rect(0,0,5,l,5)
   pop()
 }
@@ -38,18 +41,15 @@ function drawLetter(letterData) {
   strokeWeight(4);
 
   // determine parameters for second circle
-  let size2 = letterData["size"];
-  let pos2x = 50  + letterData["offsetx"];
-  let pos2y = 150 + letterData["offsety"];
+  let size1 = letterData["lineSize"];
+  let pos1x = letterData["linex1"];
+  let pos1y = letterData["liney1"];
+  let rot1 = letterData["rot1"];
 
   // draw two circles
   rectMode(CENTER)
-  fill(darkGreen);
-  ellipse(50, 150, 75, 75);
-  fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
-  rect(50,50,100,100)
-  makeLine(50,50,150,90)
+  rect(50,150,100,100)
+  makeLine(pos1x,pos1y,size1,rot1)
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
