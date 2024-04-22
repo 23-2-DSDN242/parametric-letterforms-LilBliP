@@ -28,6 +28,15 @@ function makeLine(x,y,l,rot){
   rect(0,0,5,l,5)
   pop()
 }
+function makeArc(x,y,w,h,start,stop){
+  fill(0,0)
+  stroke(midBrown)
+  strokeWeight(2);
+arc(x,y,w,h,start,stop)
+arc(x,y,w-7,h-7,start,stop)
+stroke(darkBrown)
+arc(x,y,w-3,h-3,start,stop)
+}
 /*
  * Draw the letter given the letterData
  *
@@ -39,6 +48,7 @@ function drawLetter(letterData) {
   // color/stroke setup
   stroke(strokeColor);
   strokeWeight(4);
+  angleMode(DEGREES)
 
   // determine parameters for second circle
   let size1 = letterData["lineSize1"];
@@ -57,16 +67,32 @@ function drawLetter(letterData) {
 
   let pos4x = letterData["linex4"];
   let pos4y = letterData["liney4"];
-  let rot4 = letterData["rot4"];
+
+  let arcpos1 = letterData["arcy1"];
+  let arcW1 = letterData["arcW1"];
+  let arcH1 = letterData["arcH1"];
+  let start1 = letterData["start1"];
+  let stop1 = letterData["stop1"];
+
+  let arcpos2 = letterData["arcy2"];
+  let arcW2 = letterData["arcW2"];
+  let arcH2 = letterData["arcH2"];
+  let start2 = letterData["start2"];
+  let stop2 = letterData["stop2"];
+
+  let arcx1 = letterData["arcx1"];
+  let arcx2 = letterData["arcx2"];
 
   // draw two circles
   rectMode(CENTER)
+  ellipseMode(CENTER)
   //rect(50,150,100,100)
   makeLine(pos1x,pos1y,size1,rot1)
   makeLine(pos2x,pos2y,size1,rot2)
   makeLine(pos3x,pos3y,size2,rot3)
-  makeLine(pos4x,pos4y,size2,rot4)
-  //s25 x50 y125
+  makeLine(pos4x,pos4y,size2,rot3)
+  makeArc(arcx1,arcpos1,arcW1,arcH1,start1,stop1)
+  makeArc(arcx2,arcpos2,arcW2,arcH2,start2,stop2)
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
