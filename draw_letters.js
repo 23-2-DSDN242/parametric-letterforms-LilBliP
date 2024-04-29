@@ -84,6 +84,7 @@ function drawLetter(letterData) {
   let arcx2 = letterData["arcx2"];
 
   // draw two circles
+  push()
   rectMode(CENTER)
   ellipseMode(CENTER)
   //rect(50,150,100,100)
@@ -93,6 +94,7 @@ function drawLetter(letterData) {
   makeLine(pos4x,pos4y,size2,rot3)
   makeArc(arcx1,arcpos1,arcW1,arcH1,start1,stop1)
   makeArc(arcx2,arcpos2,arcW2,arcH2,start2,stop2)
+pop()
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
