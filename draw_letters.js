@@ -19,13 +19,19 @@ const bone3 = "#ADAA7B" //bone3
 
 function makeLine(x,y,l,rot){
   push()
+  let seriflength=(l/10)
+  let width=4
+  let serifpos=(l/2)
   rectMode(CENTER)
   translate(x,y)
   rotate(rot)
   fill(darkBrown)
   stroke(midBrown)
   strokeWeight(2);
-  rect(0,0,5,l,5)
+  rect(0,0,width,l-seriflength,1)
+  noStroke()
+  triangle(0,serifpos+seriflength,2.5,serifpos-seriflength,-2,serifpos-seriflength)
+  triangle(0,-serifpos-seriflength,2.5,-serifpos+seriflength,-2,-serifpos+seriflength)
   pop()
 }
 function makeArc(x,y,w,h,start,stop){
@@ -108,5 +114,6 @@ function interpolate_letter(percent, oldObj, newObj) {
 var swapWords = [
   "ABBAABBA",
   "CAB?CAB?",
-  "BAAAAAAA"
+  "BAAAAAAA",
+  "TUNAKTXT"
 ]
