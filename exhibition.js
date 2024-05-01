@@ -6,6 +6,7 @@
 if (typeof systemBackgroundColor === 'undefined') {
     var systemBackgroundColor = "#e3eded";
 }
+//exhibition background
 
 const canvasWidth = 960;
 const canvasHeight = 500;

@@ -4,15 +4,15 @@
  */
 
 if (typeof systemBackgroundColor === 'undefined') {
-    var systemBackgroundColor = "#e3eded";
+  var systemBackgroundColor = "#e3eded";
 }
 
 if (typeof systemLineColor === 'undefined') {
-    var systemLineColor = "#000090";
+  var systemLineColor = "#000090";
 }
 
 if (typeof systemBoxColor === 'undefined') {
-    var systemBoxColor = "#00c800";
+  var systemBoxColor = "#00c800";
 }
 
 const canvasWidth = 960;
@@ -23,11 +23,11 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?";
 
 let debugBox = false;
 
-function setup () {
+function setup() {
   // create the drawing canvas, save the canvas element
   main_canvas = createCanvas(canvasWidth, canvasHeight);
   main_canvas.parent('canvasContainer');
-  
+
   // with no animation, redrawing the screen is not necessary
   noLoop();
 }
@@ -38,44 +38,43 @@ function mouseClicked() {
   redraw();
 }
 
-function draw () {
+function draw() {
   // clear screen
   background(systemBackgroundColor)
-//noise for background bone texture
+  //noise for background bone texture
   push()
-  let alph = 20
-  colorMode(HSB,360,100,100,100)
-let rez = .002;
-for(i = 0; i < canvasWidth; i++){
-  for(j = 0; j < canvasHeight; j++){
-    n = noise(i*rez,j*rez)
-    let brt = map(n,0,1,0,100)
-    noStroke()
-    fill(0,0,brt,alph)
-    rect(i,j,1)
+  let alph = 15
+  let rez = .01;
+  for (i = 0; i < canvasWidth; i++) {
+    for (j = 0; j < canvasHeight; j++) {
+      n = noise(i * rez, j * rez)
+      let brt = map(n, 0, 1, 100, 255)
+      noStroke()
+      fill(brt, alph)
+      rect(i, j, 3)
+    }
   }
-}
-pop()
-push()
-let alph2 = 10
-let rez2 = .002;
-for(i = 0; i < canvasWidth; i++){
-for(j = 0; j < canvasHeight; j++){
-  n = noise(i*rez2,j*rez2)
-  //lerpcolor for background bone
-  let bone1 = color(192, 187, 159,alph2)
-  let bone3 = color(173, 170, 123,alph2)
-  let boneGrad = lerpColor(bone1,bone3,n)
-  noStroke()
-  fill(boneGrad)
-  rect(i,j,1)
-}
-}
-pop()
+  pop()
+  push()
+  let alph2 = 1
+  let rez2 = .05;
+  for (i = 0; i < canvasWidth; i++) {
+    for (j = 0; j < canvasHeight; j++) {
+      n = noise(i * rez2, j * rez2)
+      //lerpcolor for background bone
+      let bone1 = color(192, 187, 159, alph2)
+      let bone3 = color(173, 170, 123, alph2)
+      let boneGrad = lerpColor(bone1, bone3, n)
+      noStroke()
+      fill(boneGrad)
+      rect(i, j, 3)
+    }
+  }
+  pop()
 
-  
+
   // compute the center of the canvas
-  let center_x = canvasWidth / 2;  
+  let center_x = canvasWidth / 2;
   let center_y = canvasHeight / 2;
 
   // draw the letters A, B, C from saved data
@@ -84,29 +83,29 @@ pop()
 
   // constants
   const left_margin = 40;
-  const right_margin = 2*width - 40;
+  const right_margin = 2 * width - 40;
   const top_margin = 80;
-  const bottom_margin = 2*height - 60;
+  const bottom_margin = 2 * height - 60;
   const x_step = 140;
   const y_step = 280;
   const first_letter_offset_x = 20;
 
   let cur_letter_index = 0;
 
-  for(let j=top_margin; j<bottom_margin-y_step; j+=y_step) {
+  for (let j = top_margin; j < bottom_margin - y_step; j += y_step) {
     push();
     translate(0, j);
 
     // draw lines
     stroke(systemLineColor);
     line(left_margin, 0, right_margin, 0);
-    for (let i=left_margin; i<right_margin-8; i+=30) {
-      line(i, 100, i+12, 100);
+    for (let i = left_margin; i < right_margin - 8; i += 30) {
+      line(i, 100, i + 12, 100);
     }
     line(left_margin, 200, right_margin, 200);
 
-    translate(left_margin+first_letter_offset_x, 0);
-    for (let i=left_margin+first_letter_offset_x; i<right_margin-x_step+1; i+=x_step) {
+    translate(left_margin + first_letter_offset_x, 0);
+    for (let i = left_margin + first_letter_offset_x; i < right_margin - x_step + 1; i += x_step) {
       if (cur_letter_index < letters.length) {
         if (debugBox) {
           noFill()
@@ -118,9 +117,8 @@ pop()
         let letter = letters[cur_letter_index];
         if (letter in alphabet) {
           drawLetter(alphabet[letter]);
-        }
-        else {
-          drawLetter(alphabet["default"]);    
+        } else {
+          drawLetter(alphabet["default"]);
         }
         translate(x_step, 0);
         cur_letter_index = (cur_letter_index + 1);
@@ -133,8 +131,7 @@ pop()
 function keyTyped() {
   if (key == '!') {
     saveBlocksImages();
-  }
-  else if (key == '@') {
+  } else if (key == '@') {
     saveBlocksImages(true);
   }
 }
