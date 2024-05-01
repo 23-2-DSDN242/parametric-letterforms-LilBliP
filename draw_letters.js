@@ -4,8 +4,6 @@ var systemLineColor = "#ADAA7B";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
-const darkGreen  = "#26b29d";
-const lightGreen  = "#30dfc4";
 const strokeColor  = "#0a2d27";
 
 //colours
