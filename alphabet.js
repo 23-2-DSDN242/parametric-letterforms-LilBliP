@@ -27,7 +27,7 @@ function setup () {
   // create the drawing canvas, save the canvas element
   main_canvas = createCanvas(canvasWidth, canvasHeight);
   main_canvas.parent('canvasContainer');
-
+  
   // with no animation, redrawing the screen is not necessary
   noLoop();
 }
@@ -42,6 +42,33 @@ function draw () {
   // clear screen
   background(systemBackgroundColor);
 
+  push()
+  let alph = 30
+  colorMode(HSB,360,100,100,100)
+let rez = 0.001;
+for(i = 0; i < canvasWidth; i++){
+  for(j = 0; j < canvasHeight; j++){
+    n = noise(i*rez,j*rez)
+    let brt = map(n,0,1,0,100)
+    stroke(0,0,brt,alph)
+    point(i,j)
+  }
+}
+pop()
+push()
+  let alph2 = 10
+  colorMode(HSB,360,100,100,100)
+let rez2 = 0.005;
+for(i = 0; i < canvasWidth; i++){
+  for(j = 0; j < canvasHeight; j++){
+    n = noise(i*rez2,j*rez2)
+    let brt2 = map(n,0,1,0,100)
+    stroke(300,50,brt2,alph2)
+    point(i,j)
+  }
+}
+pop()
+  
   // compute the center of the canvas
   let center_x = canvasWidth / 2;  
   let center_y = canvasHeight / 2;

@@ -1,6 +1,6 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#C0BB9F";
-var systemLineColor = "#000090";
+var systemBackgroundColor = "#FFF1CD";
+var systemLineColor = "#ADAA7B";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
@@ -16,32 +16,41 @@ const lightBeige = "#B8A36B" //edge light or yellowbone
 const bone1 = "#C0BB9F" //bone1
 const bone2 = "#B1B186" //bone2
 const bone3 = "#ADAA7B" //bone3
+const bone4 = "#FFF1CD"
 
 function makeLine(x,y,l,rot){
   push()
   let seriflength=(l/10)
-  let width=4
+  let width=2
   let serifpos=(l/2)
   rectMode(CENTER)
   translate(x,y)
   rotate(rot)
   fill(darkBrown)
-  stroke(midBrown)
-  strokeWeight(2);
+  stroke(darkBeige)
+  strokeWeight(1);
   rect(0,0,width,l-seriflength,1)
+  noFill()
   noStroke()
-  triangle(0,serifpos+seriflength,2.5,serifpos-seriflength,-2,serifpos-seriflength)
-  triangle(0,-serifpos-seriflength,2.5,-serifpos+seriflength,-2,-serifpos+seriflength)
-  pop()
+  fill(darkBrown)
+  triangle(0,serifpos+seriflength,1,serifpos-seriflength,-1,serifpos-seriflength)
+  triangle(0,-serifpos-seriflength,1,-serifpos+seriflength,-1,-serifpos+seriflength)
+  stroke(darkBeige)
+  line(0,serifpos+seriflength+.5,1,serifpos-seriflength)
+  line(0,serifpos+seriflength+.5,-1,serifpos-seriflength)
+  stroke(darkBeige)
+  line(0,-serifpos-seriflength+1.5,1,-serifpos+seriflength)
+  line(0,-serifpos-seriflength+1.5,-1,-serifpos+seriflength)
+   pop()
 }
 function makeArc(x,y,w,h,start,stop){
   fill(0,0)
-  stroke(midBrown)
-  strokeWeight(2);
-arc(x,y,w,h,start,stop)
-arc(x,y,w-7,h-7,start,stop)
+  strokeWeight(1.5);
 stroke(darkBrown)
-arc(x,y,w-3,h-3,start,stop)
+arc(x,y,w,h,start,stop)
+stroke(darkBeige)
+arc(x,y,w+2,h+2,start,stop)
+arc(x,y,w-2,h-2,start,stop)
 }
 /*
  * Draw the letter given the letterData
@@ -52,8 +61,7 @@ arc(x,y,w-3,h-3,start,stop)
  */
 function drawLetter(letterData) {
   // color/stroke setup
-  stroke(strokeColor);
-  strokeWeight(4);
+
   angleMode(DEGREES)
 
   // determine parameters for second circle
