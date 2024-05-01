@@ -1,10 +1,10 @@
 ## MDDN 242 2024 Assignment 2
+Lliam Booth
 
-(Replace this README with information about your alphabet. This is an example.)
+# Parluxst
+meaning: greetings to the light of the morning
 
-Each of my letters is composed with two circles. The size and position of the first circle is fixed, but the location and size of the second circle is controlled by three parameters.
+# Design
+I began the project initally unsure of the direction i wanted to go in i had the idea to link this project into one of my own personal world building projects creating an Alphabet for one of the early languages of the Tunak a spacefaring race of turtle like humanoids whos ancient history and cultures I plan to create and catalogue both as an absolute record and as an in universe textbook style telling with all the inacuraccy and misunderstanding that entals.
 
-The three parameters per letter:
-  * `size` : radius of the second circle
-  * `offsetx` : x offset of the second circle relative to the first one
-  * `offsety` : y offset of the second circle relative to the first one
+To that end I decided on using this as a starting point for this assignment. with that in mind I began by taking a small collection of words linked to simple concepts and often used items, and taking one of their primary phonemes(distinct units of sound such as p, b, d,  and t seen in the words pad, pat, bad, and bat) to be used as a letters for this project. Once I had assisgned a word to each unique Phoneme in Parluxst (Language name) 
