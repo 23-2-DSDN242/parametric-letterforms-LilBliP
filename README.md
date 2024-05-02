@@ -72,3 +72,8 @@ ENGLETTER: The english letter that represents the phoneme if applicable ie engli
 | X | [x](https://en.wikipedia.org/wiki/Voiceless_velar_fricative)   | X/K   |
 | Y | [ɺ](https://en.wikipedia.org/wiki/Voiced_alveolar_lateral_flap)   | R   |
 | Z | [z](https://en.wikipedia.org/wiki/Voiced_alveolar_fricative)   | Z   |
+
+### Some background lore
+
+As breifly mentioned above the *Tunak* are a species of turtle like Humanoids Originating from the Planet *Enurk* (Shell of the god). *Parluxst* is one of the oldest recorded languages of the *Tunak*, spoken primarily by the *Ngavan* people. Who are the first recorded group to worship the sun god *Aur* as part of an organised religous system. The common belief was that the sun was *Aur's* soul and *Enurk* was his shell which his chosen people where allowed to live on, under his holy protection and nurishment. 
+The development of Writing systems on *Enurk* followed a similar path as those on earth with the first writings using simple symbols and numbers primarly to record burecratic numbers such as the amount of grain a farmer made that year or the number of warriors that could be feed with current food stores. These writings were primarily made on clay tablets and were limited in scope, the true development of more advanced writing systems within *Ngavan* society was in religous texts, these texts were often enscribed on the *Enaktul* (shell) of the dead due to their sacred status. The more complex nature of these prayers and laments for the dead was the primary driving force for more complex writing systems.
