@@ -18,7 +18,7 @@ because Parluxst has far fewer Consonants than english and thus the 26 letter al
 
 I began by using a simple line function to draw the lines but i quickly found that these would use far to many variables so i instead used rect functions with rotate to reduce the number of variables. to further this i created a custom rect function that only used 4 variables to draw a rect with a constant width with custom rotation length and x,y positioning. 4 of these lines as well as 2 custom arc functions brought my total variable to 25 i spent several days trying to find a way of reducing this number without compromising too heavily on the design of the letterforms this proved to not be posible and so I continued with 25 variables 5 over the briefs condition.
 
-From this point in the project it was primarily grunt work taking my paper sketches and creating them in code making minor adjustments to a couple to make them more aesthetically pleasing and easier to recreate in code. once all the letters were created I grabbed my pre-existing numerals and added them into the project making minor changes to acomodate the restrictions of this project. once this was completed I started work on the background 
+From this point in the project it was primarily grunt work taking my paper sketches and creating them in code making minor adjustments to a couple to make them more aesthetically pleasing and easier to recreate in code.![Alphabetnearfin](readmeimg/Alpanearfin.jpg) once all the letters were created I grabbed my pre-existing numerals and added them into the project making minor changes to acomodate the restrictions of this project. once this was completed I started work on the background 
 
 ### Background
 
