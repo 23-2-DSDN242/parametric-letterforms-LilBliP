@@ -23,6 +23,7 @@ From this point in the project it was primarily grunt work taking my paper sketc
 once all the letters were created I grabbed my pre-existing numerals and added them into the project making minor changes to acomodate the restrictions of this project. 
 
 ![Numbers](readmeimg/Numbers.jpg) 
+
 once this was completed I started work on the background 
 
 ### Background
@@ -37,3 +38,7 @@ Looking at the Exhibition mode i felt it still didnt look right so i added sever
 ## Letter Conversions
 
 [def]: #LettersConversion
+
+| Attempt | #1    | #2    |
+| :---:   | :---: | :---: |
+| Seconds | 301   | 283   |
