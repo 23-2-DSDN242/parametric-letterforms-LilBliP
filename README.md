@@ -39,6 +39,6 @@ Looking at the Exhibition mode i felt it still didnt look right so i added sever
 
 [def]: #LettersConversion
 
-| Attempt | #1    | #2    |
-| :---:   | :---: | :---: |
-| Seconds | 301   | 283   |
+| ENGLetter | Parluxst Phoneme    |
+| :---:   | :---: |
+| Seconds | 301   |
