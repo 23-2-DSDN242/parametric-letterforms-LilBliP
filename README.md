@@ -41,4 +41,20 @@ Looking at the Exhibition mode i felt it still didnt look right so i added sever
 
 | ENGLetter | Parluxst Phoneme    |
 | :---:   | :---: |
-| Seconds | 301   |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
+| :---:   | :---: |
+| A | 3   |
