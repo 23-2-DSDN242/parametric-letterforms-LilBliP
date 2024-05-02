@@ -47,9 +47,9 @@ ENGLETTER: The english letter that represents the phoneme if applicable ie engli
 | POS | Parluxst Phoneme    | ENGLETTER    |
 | :---:   | :---: | :---: |
 | A | 3   | A   |
-| B | [b̪͡v](https://en.wikipedia.org/wiki/Voiced_labiodental_affricate)   | ?   |
-| C | 3   | NG   |
-| D | 3   | ?   |
+| B | [b̪͡v](https://en.wikipedia.org/wiki/Voiced_labiodental_affricate)   | BV   |
+| C | [ŋ](https://en.wikipedia.org/wiki/Voiced_velar_nasal)   | NG   |
+| D | [d͡z](https://en.wikipedia.org/wiki/Voiced_alveolar_affricate)   | ?   |
 | E | 3   | E   |
 | F | 3   | F   |
 | G | 3   | U   |
@@ -68,7 +68,7 @@ ENGLETTER: The english letter that represents the phoneme if applicable ie engli
 | T | 3   | T   |
 | U | 3   | U   |
 | V | 3   | V   |
-| W | 3   | S   |
+| W | [β](https://en.wikipedia.org/wiki/Voiced_bilabial_fricative)   | S   |
 | X | 3   | X/K   |
 | Y | 3   | R   |
 | Z | 3   | Z   |
