@@ -39,31 +39,36 @@ Looking at the Exhibition mode i felt it still didnt look right so i added sever
 
 [def]: #LettersConversion
 
-| ENGLetter | Parluxst Phoneme    |
-| :---:   | :---: |
-| A | 3   |
-| B | 3   |
-| C | 3   |
-| D | 3   |
-| E | 3   |
-| F | 3   |
-| G | 3   |
-| H | 3   |
-| I | 3   |
-| J | 3   |
-| K | 3   |
-| L | 3   |
-| M | 3   |
-| N | 3   |
-| O | 3   |
-| P | 3   |
-| Q | 3   |
-| R | 3   |
-| S | 3   |
-| T | 3   |
-| U | 3   |
-| V | 3   |
-| W | 3   |
-| X | 3   |
-| Y | 3   |
-| Z | 3   |
+Reading Conversion table
+POS: the postion of Parluxst letter in Alphabet.js
+Parluxst Phoneme: the Phoneme the letter represents
+ENGLETTER: The english letter that represents the phoneme if applicable ie english has that sound
+
+| POS | Parluxst Phoneme    | ENGLETTER    |
+| :---:   | :---: | :---: |
+| A | 3   | 3   |
+| B | 3   | 3   |
+| C | 3   | 3   |
+| D | 3   | 3   |
+| E | 3   | 3   |
+| F | 3   | 3   |
+| G | 3   | 3   |
+| H | 3   | 3   |
+| I | 3   | 3   |
+| J | 3   | 3   |
+| K | 3   | 3   |
+| L | 3   | 3   |
+| M | 3   | 3   |
+| N | 3   | 3   |
+| O | 3   | 3   |
+| P | 3   | 3   |
+| Q | 3   | 3   |
+| R | 3   | 3   |
+| S | 3   | 3   |
+| T | 3   | 3   |
+| U | 3   | 3   |
+| V | 3   | 3   |
+| W | 3   | 3   |
+| X | 3   | 3   |
+| Y | 3   | 3   |
+| Z | 3   | 3   |
