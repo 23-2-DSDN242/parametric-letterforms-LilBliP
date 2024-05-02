@@ -22,6 +22,10 @@ const canvasHeight = 500;
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?";
 
 let debugBox = false;
+let img;
+function preload(){
+  img = loadImage('background.jpg')
+}
 
 function setup() {
   // create the drawing canvas, save the canvas element
@@ -38,39 +42,43 @@ function mouseClicked() {
   redraw();
 }
 
+//let noiseCache = null;
+
 function draw() {
+  image(img,0,0) //backgroundimg
   // clear screen
-  background(systemBackgroundColor)
-  //noise for background bone texture
-  push()
-  let alph = 15
-  let rez = .01;
-  for (i = 0; i < canvasWidth; i++) {
-    for (j = 0; j < canvasHeight; j++) {
-      n = noise(i * rez, j * rez)
-      let brt = map(n, 0, 1, 100, 255)
-      noStroke()
-      fill(brt, alph)
-      rect(i, j, 3)
-    }
-  }
-  pop()
-  push()
-  let alph2 = 1
-  let rez2 = .05;
-  for (i = 0; i < canvasWidth; i++) {
-    for (j = 0; j < canvasHeight; j++) {
-      n = noise(i * rez2, j * rez2)
-      //lerpcolor for background bone
-      let bone1 = color(192, 187, 159, alph2)
-      let bone3 = color(173, 170, 123, alph2)
-      let boneGrad = lerpColor(bone1, bone3, n)
-      noStroke()
-      fill(boneGrad)
-      rect(i, j, 3)
-    }
-  }
-  pop()
+  //noise for background bone texture//
+//   background(systemBackgroundColor)
+//  push()
+//   let alph = 8
+//   let rez = .01;
+//   noStroke();
+//   for (i = 0; i < canvasWidth; i++) {
+//     for (j = 0; j < canvasHeight; j++) {
+//       n = noise(i * rez, j * rez)
+//       let brt = map(n, 0, 1, 100, 255)
+//       fill(brt, alph)
+//       rect(i, j, 3)
+//     }
+//   }
+//   pop()  
+//   push()
+//   let alph2 = 1
+//   let rez2 = .05;
+//   for (i = 0; i < canvasWidth; i++) {
+//     for (j = 0; j < canvasHeight; j++) {
+//       n = noise(i * rez2, j * rez2)
+//       //lerpcolor for background bone
+//       let bone1 = color(192, 187, 159, alph2)
+//       let bone3 = color(173, 170, 123, alph2)
+//       let boneGrad = lerpColor(bone1, bone3, n)
+//       noStroke()
+//       fill(boneGrad)
+//       rect(i, j, 3)
+//     }
+//   }
+//   pop()
+//   return
 
 
   // compute the center of the canvas

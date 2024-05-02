@@ -7,7 +7,7 @@ var systemBoxColor = "#C73869";
 const strokeColor = "#0a2d27";
 
 //colours
-const darkBrown = "#362707" //deep cut bone
+const darkBrown = "#594211" //deep cut bone
 const midBrown = "#63562D" // deep cut light
 const darkBeige = "#97844D" //edge dark
 const lightBeige = "#B8A36B" //edge light or yellowbone
@@ -140,10 +140,11 @@ function interpolate_letter(percent, oldObj, newObj) {
 }
 
 var swapWords = [
+  "PARLUXST",
+  "TUNAKTXT",
   "ABRACADB",
   "CAB?CAB?",
   "NOT?LANG",
-  "TUNAKTXT",
   "?012345?",
-  ""
+  "?HABHAB?"
 ]
