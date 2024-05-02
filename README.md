@@ -16,4 +16,4 @@ I began by using a simple line function to draw the lines but i quickly found th
 
 From this point in the project it was primarily grunt work taking my paper sketches and creating them in code making minor adjustments to a couple to make them more aesthetically pleasing and easier to recreate in code. once all the letters were created i started work on the background i wanted to make the background look like bone to connect back with the primary inspiration of the oracle bone script as Parluxst would be craved on similar bone pieces. To do this I used two layered noise functions to create a variable coloured backround using colours taken from an image of an oracle bone carving these colours where edited slightly based on what i felt looked better although these changes were limited.
 
-## LettersConversion
+### LettersConversion
