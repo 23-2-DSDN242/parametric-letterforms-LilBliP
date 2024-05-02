@@ -117,26 +117,10 @@ function drawLetter(posx, posy, letterData) {
   rect(line3offset,y3_1,20,size3)
   rect(line3offset,y3_2,20,size3)
 
-  makeLine(200,200,200,0)
+
   
 }
-function makeLine(x,y,l,rot){
-  push()
-  let seriflength=(l/10)
-  let width=10
-  let serifpos=(l/2)
-  rectMode(CENTER)
-  translate(x,y)
-  rotate(rot)
-  fill(darkGreen)
-  stroke(0)
-  strokeWeight(2);
-  rect(0,0,width,l-seriflength,1)
-  noStroke()
-  triangle(0,serifpos+seriflength,2.5,serifpos-seriflength,-2,serifpos-seriflength)
-  triangle(0,-serifpos-seriflength,2.5,-serifpos+seriflength,-2,-serifpos+seriflength)
-  pop()
-}
+
 function keyTyped() {
   if (key == '!') {
     saveBlocksImages();
