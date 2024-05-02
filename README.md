@@ -46,7 +46,7 @@ ENGLETTER: The english letter that represents the phoneme if applicable ie engli
 
 | POS | Parluxst Phoneme    | ENGLETTER    |
 | :---:   | :---: | :---: |
-| A | 3   | A   |
+| A | [ɐ](https://en.wikipedia.org/wiki/Near-open_central_vowel)   | A   |
 | B | [b̪͡v](https://en.wikipedia.org/wiki/Voiced_labiodental_affricate)   | BV   |
 | C | [ŋ](https://en.wikipedia.org/wiki/Voiced_velar_nasal)   | NG   |
 | D | [d͡z](https://en.wikipedia.org/wiki/Voiced_alveolar_affricate)   | ?   |
