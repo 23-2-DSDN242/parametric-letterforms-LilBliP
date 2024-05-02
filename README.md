@@ -41,34 +41,34 @@ Looking at the Exhibition mode i felt it still didnt look right so i added sever
 
 Reading Conversion table
 POS: the postion of Parluxst letter in Alphabet.js
-Parluxst Phoneme: the Phoneme the letter represents
-ENGLETTER: The english letter that represents the phoneme if applicable ie english has that sound
+Parluxst Phoneme: the Phoneme the letter represents in IPA format (International Phonetic Alphabet)
+ENGLETTER: The english letter that represents the phoneme if applicable ie english has that sound or sounds that are similar eg R for a "rolled" R sound
 
 | POS | Parluxst Phoneme    | ENGLETTER    |
 | :---:   | :---: | :---: |
-| A | 3   | 3   |
-| B | 3   | 3   |
-| C | 3   | 3   |
-| D | 3   | 3   |
-| E | 3   | 3   |
-| F | 3   | 3   |
-| G | 3   | 3   |
-| H | 3   | 3   |
-| I | 3   | 3   |
-| J | 3   | 3   |
-| K | 3   | 3   |
-| L | 3   | 3   |
-| M | 3   | 3   |
-| N | 3   | 3   |
-| O | 3   | 3   |
-| P | 3   | 3   |
-| Q | 3   | 3   |
-| R | 3   | 3   |
-| S | 3   | 3   |
-| T | 3   | 3   |
-| U | 3   | 3   |
-| V | 3   | 3   |
-| W | 3   | 3   |
-| X | 3   | 3   |
-| Y | 3   | 3   |
-| Z | 3   | 3   |
+| A | 3   | A   |
+| B | [b̪͡v](https://en.wikipedia.org/wiki/Voiced_labiodental_affricate)   | ?   |
+| C | 3   | NG   |
+| D | 3   | ?   |
+| E | 3   | E   |
+| F | 3   | F   |
+| G | 3   | U   |
+| H | 3   | A   |
+| I | 3   | I   |
+| J | 3   | E   |
+| K | 3   | U   |
+| L | 3   | L   |
+| M | 3   | M   |
+| N | 3   | N   |
+| O | 3   | O   |
+| P | 3   | p   |
+| Q | 3   | A   |
+| R | 3   | R   |
+| S | 3   | S   |
+| T | 3   | T   |
+| U | 3   | U   |
+| V | 3   | V   |
+| W | 3   | S   |
+| X | 3   | X/K   |
+| Y | 3   | R   |
+| Z | 3   | Z   |
